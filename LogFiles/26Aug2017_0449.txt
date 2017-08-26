@@ -1,0 +1,5 @@
+Sample#: 0	Temperature: 7.57	Pressure: 749.99
+Sample#: 1	Temperature: 13.46	Pressure: 311.47
+Sample#: 2	Temperature: 24.01	Pressure: 491.04
+Sample#: 3	Temperature: 84.50	Pressure: 642.15
+
