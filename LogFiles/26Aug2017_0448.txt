@@ -5,4 +5,3 @@ Sample#: 3	Temperature: 36.19	Humidity: 0.43	Pressure: 227.90
 Sample#: 4	Temperature: 57.60	Humidity: 0.96	Pressure: 986.91
 Sample#: 5	Temperature: 75.76	Humidity: 0.77	Pressure: 913.09
 Sample#: 6	Temperature: 37.09	Humidity: 0.35	Pressure: 885.15
-
