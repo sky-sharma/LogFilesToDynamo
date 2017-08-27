@@ -1,11 +1,11 @@
-Sample#: 0	Temperature: 92.76	Pressure: 309.96
-Sample#: 1	Temperature: 45.40	Pressure: 256.49
-Sample#: 2	Temperature: 83.63	Pressure: 290.97
-Sample#: 3	Temperature: 3.59	Pressure: 957.06
-Sample#: 4	Temperature: 71.97	Pressure: 773.79
-Sample#: 5	Temperature: 43.10	Pressure: 598.89
-Sample#: 6	Temperature: 96.98	Pressure: 463.49
-Sample#: 7	Temperature: 27.84	Pressure: 329.82
-Sample#: 8	Temperature: 49.97	Pressure: 721.71
-Sample#: 9	Temperature: 88.30	Pressure: 447.11
-Sample#: 10	Temperature: 14.13	Pressure: 163.68
+Sample#: 0	Temperature: 92.76	Humidity: 0.75	Pressure: 309.96
+Sample#: 1	Temperature: 45.40	Humidity: 0.98	Pressure: 256.49
+Sample#: 2	Temperature: 83.63	Humidity: 0.44	Pressure: 290.97
+Sample#: 3	Temperature: 3.59	Humidity: 0.56	Pressure: 957.06
+Sample#: 4	Temperature: 71.97	Humidity: 0.33	Pressure: 773.79
+Sample#: 5	Temperature: 43.10	Humidity: 0.66	Pressure: 598.89
+Sample#: 6	Temperature: 96.98	Humidity: 0.85	Pressure: 463.49
+Sample#: 7	Temperature: 27.84	Humidity: 0.84	Pressure: 329.82
+Sample#: 8	Temperature: 49.97	Humidity: 0.88	Pressure: 721.71
+Sample#: 9	Temperature: 88.30	Humidity: 0.46	Pressure: 447.11
+Sample#: 10	Temperature: 14.13	Humidity: 0.65	Pressure: 163.68
