@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.104.0",
+    "aws-sdk": "git://github.com/aws/aws-sdk-js.git",
     "fs": "0.0.1-security",
     "path": "^0.12.7",
     "scanf": "^0.7.3",

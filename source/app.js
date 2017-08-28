@@ -8,6 +8,10 @@ var appDir = path.dirname(require.main.filename);
 var logsDir = path.normalize(appDir + '/../LogFiles');
 var fields = ['Temperature', 'Pressure'];
 var s3 = new aws.S3();
+var dynamodb = new aws.DynamoDB({ region: 'us-east-1' });
+var docClient = new aws.DynamoDB.DocumentClient({ service: dynamodb });
+
+aws.config.update({ endpoint: 'https://dynamodb.us-east-1.amazonaws.com' });
 
 var params = {
   Bucket: 'indie-log-files' /* required */};
@@ -32,8 +36,24 @@ s3.listObjects(params, function(err, data) {
       if (err) throw err;
       var logContents = fileContents.Body;
       var floatsArray = utils.parseStrForFloats(logContents, fields);
-      console.log(path.basename(logFileName, '.txt'));
-      console.log(utils.calcColAvgs(floatsArray));
+      var dBaseParams = {
+        TableName: 'WeatherAverages',
+        Item: {
+          'DateTime': path.basename(logFileName, '.txt'),
+          'AvgTemperature': utils.calcColAvgs(floatsArray)[0],
+           'AvgPressure': utils.calcColAvgs(floatsArray)[1]
+        }
+      }
+
+      docClient.put(dBaseParams, (err, data) => {
+             if (err) {
+                 console.error('Unable to add item. Error JSON:', JSON.stringify(err, null, 2));
+             } else {
+                 console.log('PutItem succeeded');
+             }
+          });
+      // console.log(path.basename(logFileName, '.txt'));
+      // console.log(utils.calcColAvgs(floatsArray));
     });
   });
   };
