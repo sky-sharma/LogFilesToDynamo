@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const Str = require('string');
-const utils = require('./utils/utils.js');
+const utils = require('./utils.js');
 const aws = require('aws-sdk');
 
 var appDir = path.dirname(require.main.filename);
