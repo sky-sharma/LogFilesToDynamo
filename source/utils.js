@@ -1,4 +1,4 @@
-const Str = require('string');
+//const Str = require('string');
 const scanf = require('scanf')
 const sscanf = require('scanf').sscanf;
 var floatsArray = [];
