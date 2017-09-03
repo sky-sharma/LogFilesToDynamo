@@ -9,7 +9,7 @@ var logsDir = path.normalize(appDir + '/../LogFiles');
 var fields = ['Temperature', 'Pressure'];
 var s3 = new aws.S3();
 var dynamodb = new aws.DynamoDB({ region: 'us-east-1' });
-var docClient = new aws.DynamoDB.DocumentClient({ service: dynamodb });
+var docClient = new aws.DynamoDB.DocumentClient({ service: dynamodb, apiVersion: '2012-08-10' });
 
 aws.config.update({ endpoint: 'https://dynamodb.us-east-1.amazonaws.com' });
 
